@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import './StandardUserSteps.css';
 import { Row, Col, Modal } from 'react-bootstrap';
 import step3_1 from "../../components/img/step3_1.svg";
