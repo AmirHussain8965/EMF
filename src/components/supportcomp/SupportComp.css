@@ -1,0 +1,81 @@
+.support_comp_main{
+    padding: 20px 30px;
+    height: calc(100vh - 104px);
+    overflow-y: auto;
+}
+.support_comp_inputs_div{
+    position: relative;
+    margin-top: 30px;
+}
+.support_comp_inputs_div label {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: capitalize;    
+    position: absolute;
+    left: 25px;
+    top: -10px;
+    z-index: 8;
+    background-color: #FFFFFF;
+    padding: 0px 10px;
+    color: #6C757D;
+}
+.support_comp_inputs_div input {
+    width: 100%;
+    padding: 15px 30px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+    color: #6C757D;
+}
+.support_comp_inputs_div textarea {
+    width: 100%;
+    padding: 15px 30px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+    color: #6C757D;
+}
+.support_comp_inputs_div input::placeholder{
+    color: #6C757D;
+}
+.search_input_main{
+    width: 100%;
+    max-width: 320px;
+    margin-left: auto;
+    margin-top: 30px;
+    position: relative;
+}
+.search_input_main input {
+    width: 100%;
+    padding: 8px 15px 8px 30px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+    color: #6C757D;
+}
+.search_input_main input::placeholder{
+    color: #6C757D;
+}
+.search_input_main img{
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    cursor: pointer;
+    z-index: 9;
+    height: 15px;
+    width: auto;
+}

@@ -1,0 +1,122 @@
+/* OurTeam.css */
+.OurTeam_section{
+    padding: 50px 0px;
+    margin-top: 50px;
+}
+.form_container {
+    border: 1px solid #18A0FB;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #fff;
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+}
+.form_container h2 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 100%;
+    color: #18A0FB;
+}
+.form_input_div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 12px;
+}
+.form_input_div label{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 8%;
+    color: #0D0D0D;
+}
+.form_input_div input {
+    background: #E0E0E0B2;
+    padding: 7px 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+    color: #000;
+    font-weight: 300;
+    font-size: 15px;
+}
+.form_input_div input::placeholder{
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #0D0D0DB2;
+}
+.form_input_div textarea {
+    background: #E0E0E0B2;
+    padding: 7px 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+    color: #000;
+    font-weight: 300;
+    font-size: 15px;
+}
+.form_inner_main button {
+    margin-top: 20px ;
+    background: linear-gradient(89.17deg, #0D7ECA -4.05%, #18A0FB 101.6%);
+    color: #fff;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+}
+.contact_info_main {
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+.contact_info_main h2 {
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #18A0FB;
+    padding-bottom: 20px;
+}
+.contact_text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 20px;
+}
+.contact_text strong{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    color: #0D0D0D;
+}
+.contact_text p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #0D0D0DB2;
+    margin-bottom: 0;
+}
+.contact_info_main button {
+    margin-top: 20px ;
+    background: linear-gradient(89.17deg, #0D7ECA -4.05%, #18A0FB 101.6%);
+    color: #fff;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+}

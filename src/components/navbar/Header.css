@@ -1,0 +1,32 @@
+.navbar ul li a{
+    color: white !important;
+}
+.navlogo {
+    height: 50px;
+    width: auto;
+}
+.navbar-light .navbar-toggler{
+    box-shadow: none;
+    border: none;
+}
+.navbar-nav{
+    text-align: start;
+}
+.header_left_txt h3{
+    font-weight: 600;
+    font-size: 32px;
+    letter-spacing: 0%;
+    margin-bottom: 0;
+}
+.header_left_txt p{
+    margin-top: 12px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: -1.5%;
+    color: #000000CC;
+    margin-bottom: 0;
+}
+.header_left_txt{
+    padding: 15px 20px;
+}

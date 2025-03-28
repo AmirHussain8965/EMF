@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+div{
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+.toggle-btn {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+    display: none;
+    background-color: #fff;
+}
+.sidebar {
+    min-width: 270px;
+    height: 100vh;
+    background: #EEF8FF;
+    transition: transform 0.3s ease-in-out;
+    /* box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1); */
+    border: 1px solid #D4D4D499;
+    z-index: 111;
+    overflow-y: auto;
+}
+.sidebar.closed {
+    transform: translateX(-100%);
+}
+.sidebar_title{
+    padding: 30px;
+    text-align: center;
+}
+.sidebar_title h2 {
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: -1.5%;
+    color: #000;
+    margin-bottom: 0;
+}
+.sidebar_accordions_main .accordion-item{
+    border: none;
+}
+.sidebar_accordions_main .accordion-button {
+    background-color: #EEF8FF !important;
+    font-weight: 500;
+    font-size: 16px;
+    border: none;
+    transition: background 0.3s ease-in-out;
+    border-bottom: 1px solid #D4D4D4;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    padding: 15px;
+}
+.sidebar_accordions_main .accordion-body{
+    background-color: #EEF8FF;
+    padding: 0;
+}
+.sidebar_accordions_main ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+.sidebar_links_div ul{
+    margin-left: 0;
+}
+.sidebar_accordions_main ul li {
+    border-bottom: 1px solid #D4D4D4;
+    background-color: #EEF8FF;
+    border-radius: 0;
+    transition: background 0.3s ease-in-out;
+    font-size: 16px;
+    font-weight: 500;
+}
+.sidebar_accordions_main ul li a {
+    text-decoration: none;
+    display: block;
+    color: #000;
+    padding: 15px 5px 15px 30px;
+}
+.sidebar_accordions_main ul li a:hover{
+    color: #fff;
+    background: linear-gradient(89.49deg, #0D7ECA 29.65%, #18A0FB 97.53%) !important;
+}
+.sidebar_accordions_main ul li a.active{
+    color: #fff;
+    background: linear-gradient(89.49deg, #0D7ECA 29.65%, #18A0FB 97.53%) !important;
+}
+.sidebar_accordions_main ul li a:hover .sidebar_img{
+    filter: invert(1);
+}
+.sidebar_accordions_main ul li a.active .sidebar_img{
+    filter: invert(1);
+}
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+.sidebar_accordions_main .accordion-button::after{
+    background-image: url(../../components/img/arrow2.svg) !important;
+    transform: rotate(180deg);
+    background-size: 1.50rem !important;
+}
+.sidebar_accordions_main .accordion-button:not(.collapsed)::after{
+    background-image: url(../../components/img/arrow2.svg) !important;
+    transform: rotate(0deg);
+}
+.sidebar_links_div ul{
+    margin-left: 0;
+}
+.sidebar_links_div ul a{
+    padding: 14px 5px 15px 15px !important;
+}
+
+
+@media (max-width: 992px) {
+    .sidebar {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        transform: translateX(-100%);
+    }
+
+    .sidebar.open {
+        transform: translateX(0);
+    }
+
+    .toggle-btn {
+        display: block;
+        right: 10px;
+        left: unset;
+    }
+}

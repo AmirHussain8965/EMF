@@ -1,0 +1,54 @@
+.HeaderTwo_section{
+    background: #0D0D0D4D;
+    backdrop-filter: blur(30px);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0;
+    z-index: 99;
+}
+.HeaderTwo_section .dropdown-menu{
+    background-color: #000;
+    text-align: start;
+    padding: 20px 10px;
+}
+.HeaderTwo_section .navbar-nav{
+    align-items: center;
+}
+.HeaderTwo_section .navbar-nav a{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.HeaderTwo_section .navbar-nav a.active{
+    color: #fff;
+    font-weight: 600;
+}
+.header2_btns{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.header2_btns button{
+    background: transparent;
+    border: 1px solid #0D7ECA;
+    padding: 10px 20px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    transition: background-color 0.3s ease;
+    min-width: 100px;
+    color: #FFFFFF;
+}
+.header2_btns button:hover{
+    background: linear-gradient(89.49deg, #0D7ECA 29.65%, #18A0FB 97.53%);
+    border: none;
+}
+.header2_btns .h2_btn_active{
+    background: linear-gradient(89.49deg, #0D7ECA 29.65%, #18A0FB 97.53%);
+    border: none;
+}

@@ -1,0 +1,96 @@
+.setting_text_div{
+    margin-top: 25px;
+}
+.setting_text_div h5{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+    color: #6C757D;
+}
+.setting_text_div p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 124%;
+    letter-spacing: 0%;
+    color: #6C757D;
+    margin-top: 20px;
+}
+.setting_text_div ul{
+    padding-left : 0;
+}
+.setting_text_div ul li{
+    list-style-type: none;
+    padding-top: 6px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 124%;
+    letter-spacing: 0%;
+    color: #6C757D;
+}
+.last_right{
+    text-align: end;
+}
+.last_right button{
+    background: linear-gradient(264.67deg, #0D7ECA -7.95%, #18A0FB 99.33%);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 4px;
+    padding: 12px 15px;
+    border: none;
+    min-width: 120px;
+}
+.setting_modal_main .modal-header{
+    border: none;
+}
+.setting_modal_inner{
+    padding: 0px 20px 20px 20px;
+}
+.setting_modal_inner h5{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #000000CC;
+}
+.setting_modal_inner h6{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #4D4D4D;
+    padding-top: 10px;
+}
+.setting_modal_inner p{
+    padding-top: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #4D4D4D;
+}
+.setting_modal_inner p a{
+    color: #0099FF;
+    text-decoration: none;
+}
+.setting_modal_inner button{
+    background: linear-gradient(89.49deg, #0D7ECA 29.65%, #18A0FB 97.53%);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 100%;
+    letter-spacing: -1.5%;
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    margin-top: 20px;
+}
+.setting_modal_main .modal-body{
+    padding-top: 0;
+}

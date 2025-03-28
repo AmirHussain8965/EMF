@@ -1,0 +1,111 @@
+.table th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+    border: 1px solid #dee2e6 !important;
+}
+.table tbody tr td {
+    vertical-align: middle;
+    border: 1px solid #dee2e6 !important; 
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #6C757D;
+}
+.table tbody tr td span{
+    color: #18A0FB;
+    text-decoration: none;
+}
+.table {
+    border-collapse: collapse;
+}
+.sort-icon {
+    color: #6c757d;
+    cursor: pointer;
+}
+.table tbody tr {
+    border-bottom: 5px solid #f8f9fa;
+}
+.table-hover tbody tr:hover {
+    background-color: transparent;
+}
+.mytable_head_main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 130px;
+}
+.mytable_head_main p{
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0%;
+}
+.mytable_head_icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 7px;
+}
+.mytable_head_icons img{
+    height: 20px;
+    width: auto;
+}
+.mytable_main{
+    overflow-x: auto;
+    width: 100%;
+    max-width: 1550px;
+    margin: auto;
+    margin-top: 20px;
+}
+.mytable_modal_main .modal-header{
+    border: none;
+}
+.mytable_modal_inner{
+    padding: 0px 20px 20px 20px;
+}
+.mytable_modal_inner h5{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #000000CC;
+}
+.mytable_modal_inner h6{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #4D4D4D;
+    padding-top: 10px;
+}
+.mytable_modal_inner p{
+    padding-top: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #4D4D4D;
+}
+.mytable_modal_inner p a{
+    color: #0099FF;
+    text-decoration: none;
+}
+.mytable_modal_inner button{
+    background: linear-gradient(89.49deg, #0D7ECA 29.65%, #18A0FB 97.53%);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 100%;
+    letter-spacing: -1.5%;
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    margin-top: 20px;
+    min-width: 130px;
+}
+.mytable_modal_main .modal-body{
+    padding-top: 0;
+}

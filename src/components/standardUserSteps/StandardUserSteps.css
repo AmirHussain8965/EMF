@@ -1,0 +1,419 @@
+/* *{
+    border: 1px dotted #000;
+} */
+.sus_title{
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+.sus_title h3{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+    color: #000000;
+    position: relative;
+    z-index: 99;
+    margin-left: 30px;
+}
+.sus_title h3::before{
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 121%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+    color: #D4D4D4;
+    position: absolute;
+    top: -14px;
+    left: -30px;
+    z-index: -1;
+}
+.step3_modal_title_img{
+    text-align: center;
+    max-width: 992px;
+    margin: auto;
+    margin-top: 40px;
+}
+.step3_modal_title_img img{
+    width: 100%;
+    object-fit: contain;
+}
+.sus_title h3.step1_txt::before{
+    content: "01";
+}
+.sus_title h3.step2_txt::before{
+    content: "02";
+}
+.sus_title h3.step3_txt::before{
+    content: "03";
+}
+.sus_title h3.step4_txt::before{
+    content: "04";
+}
+.sus_title h3.step5_txt::before{
+    content: "05";
+}
+.sus_title h3.step6_txt::before{
+    content: "06";
+}
+.steps_input_div{
+    margin-top: 30px;
+    position: relative;
+}
+.steps_input_div label{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+    color: #6C757D;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: -8px;
+    left: 35px;
+    z-index: 12;
+    padding: 0px 10px;
+}
+.steps_input_div input{
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #D4D4D4;
+    padding: 12px 20px 10px 40px;
+    font-size: 14px;
+    outline: none;
+    color: #8F8F8F;
+}
+.steps_input_div input::placeholder{
+    font-size: 14px;
+    color: #8F8F8F;
+}
+.steps_input_div p{
+    margin-top: 6px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #8F8F8F;
+    padding-left: 5px;
+    margin-bottom: 0;
+}
+.steps_input_div h6{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+    color: #6C757D;
+}
+.steps_input_div img{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+}
+.steps_input_div p a{
+    color: #18A0FB;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 0%;
+}
+.upload_main_row{
+    position: relative;
+}
+.upload_main_row col{
+    padding-right: 20px;
+}
+.or_txt{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+    color: #6C757D;
+    text-align: center;
+}
+.SU_step3_cards_body_div{
+    border: 1px solid #D4D4D4;
+    padding: 10px;
+    border-radius: 8px;
+    position: relative;
+    margin-top: 40px;
+}
+.fluent_img{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 9;
+    cursor: pointer;
+}
+.SU_step3_card_img img{
+    width: 100%;
+    height: auto;
+}
+.SU_step3_card_txt h6{
+    margin-top: 7px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+    color: #6C757D;
+}
+.SU_step3_card_txt h5{
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+    color: #6C757D;
+    margin-bottom: 0;
+}
+.step3_modal.modal-dialog {
+    max-width: 90% !important;
+    margin-right: auto;
+    margin-left: auto;
+}
+.step3_modal_title_main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+.su_step4_card_body{
+    border: 2px solid #D4D4D4;
+    padding: 10px;
+    border-radius: 8px;
+    position: relative;
+    width: 100%;
+    display: block;
+    transition: border 0.3s ease-in-out;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.su_step4_card_body.active {
+    border: 2px solid #0D7ECA;
+}
+.su_step4_card_inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.su_step4_card_inner h5{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+    color: #6C757D;
+    margin-bottom: 0;
+}
+.su_step4_card_inner_radio_btn{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.su_step4_card_inner_radio_btn label{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+    color: #6C757D;
+}
+.su_step4_card_inner2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 10px;
+}
+.su_step4_card_inner2 p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+    color: #6C757D;
+    margin-bottom: 0;
+}
+.su_step4_card_inner2 a{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+    color: #18A0FB;
+    text-decoration: none ;
+}
+.summary{
+    margin-top: 50px;
+    border-top: 1px dotted #D4D4D4;
+    padding: 15px 0px;
+}
+/* .summary-total{
+    border-top: 1px solid #D4D4D4;
+    padding: 15px 0px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    color: #000000;
+} */
+.summary h4{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+    color: #000000;
+}
+.summary ul{
+    padding-left: 0;
+}
+.summary ul li{
+    display: flex;
+    justify-content: space-between; 
+    margin-top: 10px;
+    color: #6C757D;
+}
+.steps_subtitle{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+    color: #6C757D;
+    margin-top: 50px;
+}
+.steps_subtitle span{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+    color: #6C757D;
+}
+.step5_check_box{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.step5_check_box label{
+    font-weight: 400;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    color: #8F8F8F;
+}
+.step6_content1_main{
+    padding: 20px 30px;
+}
+.step6_content1_inner{
+    padding: 15px 4px;
+    border-bottom: 1px solid #D4D4D4;
+}
+.step6_content1_inner_title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.step6_content1_inner_title h5{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+    color: #6C757D;
+    margin-bottom: 0;
+}
+.step6_content1_inner_title p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+    color: #6C757D;
+    margin-bottom: 0;
+}
+.step6_content1_inner ul{
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.step6_content1_inner ul li{
+    display: flex;
+    justify-content: space-between; 
+    margin-top: 10px;
+    color: #6C757D;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+}
+.step6_content1_totals{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 4px;
+}
+.step6_content1_totals h5{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+    color: #000000;
+}
+.complete_payment_btn button{
+    background: linear-gradient(89.49deg, #0D7ECA 29.65%, #18A0FB 97.53%);
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+    transition: background 0.3s ease-in-out;
+    border-radius: 8px;
+}
+@media (min-width: 576px) {
+    .step3_modal.modal-dialog {
+        max-width: 90% !important;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+@media (max-width: 576px) {
+    .steps_input_div label {
+        font-weight: 400;
+        font-size: 14px;
+        left: 10px;
+        z-index: 12;
+        padding: 0px 6px;
+    }
+}
+
+
+
+
+
+

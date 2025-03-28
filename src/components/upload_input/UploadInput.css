@@ -1,0 +1,13 @@
+.upload_image_steps{
+    display: block;
+    width: 100%;
+}
+.upload_image_inner{
+    position: relative;
+}
+.upload_image_steps img{
+    position: absolute;
+    top: 17px;
+    right: 45px;
+    cursor: pointer;
+}
