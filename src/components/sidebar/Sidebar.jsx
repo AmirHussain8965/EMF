@@ -12,6 +12,9 @@ import as7_img from "../../components/img/as7.svg";
 import as8_img from "../../components/img/as8.svg";
 import as9_img from "../../components/img/as9.svg";
 import as10_img from "../../components/img/as10.svg";
+import as11_img from "../../components/img/as11.svg";
+import Billing from "../../components/img/Billing.svg";
+import Company from "../../components/img/company.svg";
 import { Link } from "react-router-dom";
 
 const Sidebar = ({ isOpen, toggleSidebar }) => {
@@ -41,9 +44,12 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
               <ul>
                 <li><Link to="/FTPAccess"><img className="sidebar_img" src={as8_img} alt="" /> FTP Access</Link></li>
                 <li><Link to="/Settings"><img className="sidebar_img" src={as9_img} alt="" /> Settings</Link></li>
+                <li><Link to="/ManUser"><img className="sidebar_img" src={as11_img} alt="" /> User</Link></li>
+                <li><Link to="/Billing"><img className="sidebar_img" src={Billing} alt="" /> Billing</Link></li>
                 <li><Link to="/Support"><img className="sidebar_img" src={as10_img} alt="" /> Support</Link></li>
+                <li><Link to="/Company"><img className="sidebar_img" src={Company} alt="" /> Company</Link></li>
               </ul>
-            </div>
+            </div> 
         </div>
       </div>
       <button className="toggle-btn" onClick={toggleSidebar}>

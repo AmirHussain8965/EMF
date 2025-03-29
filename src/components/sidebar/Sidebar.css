@@ -12,7 +12,7 @@ div{
     background: none;
     border: none;
     cursor: pointer;
-    z-index: 1000;
+    z-index: 200;
     display: none;
     background-color: #fff;
 }
@@ -136,7 +136,5 @@ div{
 
     .toggle-btn {
         display: block;
-        right: 10px;
-        left: unset;
     }
 }

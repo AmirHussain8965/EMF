@@ -1,0 +1,5 @@
+.ManUserCom_main {
+    padding: 20px 30px;
+    height: calc(100vh - 104px);
+    overflow-y: auto;
+}

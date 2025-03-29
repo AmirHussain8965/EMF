@@ -81,11 +81,13 @@
 }
 
 .back-button {
-    background: #ccc;
+    background: #fff;
+    border: 1px solid #18A0FB;
+    color: #18A0FB;
 }
 
 .back-button:disabled {
-    background: #e0e0e0;
+    background: #fff;
     cursor: not-allowed;
 }
 

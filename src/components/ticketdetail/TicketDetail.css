@@ -1,0 +1,83 @@
+.TicketDetail_main {
+    padding: 20px 30px;
+    height: calc(100vh - 104px);
+}
+.TicketDetail_inner{
+    padding: 20px 40px;
+}
+.last_right {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+.ticket-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ticket-info p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+.ticket-info strong {
+    font-weight: bold;
+}
+.back-button {
+    background: linear-gradient(264.67deg, #18A0FB -7.95%, #0D7ECA 99.33%);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    border: none;
+    color: #fff;
+    padding: 10px 10px;
+}
+.ticket-user-info p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+.ticket-user-info strong {
+    font-weight: bold;
+}
+.status-open {
+    color: green;
+}
+.ticket-description {
+    margin-top: 30px;
+    padding: 12px 0px;
+    border: 1px solid #00000080;
+    border-right: none;
+    border-left: none;
+}
+.ticket-description p {
+    margin: 5px 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.ticket-closed-on {
+    margin-top: 20px;
+}
+.ticket-closed-on p {
+    margin: 5px 0;
+    font-size: 14px;
+    font-style: italic;
+    color: #666;
+}
+.ticket-actions {
+    margin-top: 20px;
+    text-align: right;
+}
+.mark-closed-button {
+    background: linear-gradient(264.67deg, #18A0FB -7.95%, #0D7ECA 99.33%);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    border: none;
+    color: #fff;
+    padding: 10px 10px;
+}

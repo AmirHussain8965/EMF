@@ -30,7 +30,17 @@
     color: #6C757D;
 }
 .last_right{
+    display: flex;
+    justify-content: end;
     text-align: end;
+}
+.last_right h5{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: -1.5%;
+    color: #000000;
+    margin-bottom: 0;
 }
 .last_right button{
     background: linear-gradient(264.67deg, #0D7ECA -7.95%, #18A0FB 99.33%);
@@ -44,6 +54,11 @@
     padding: 12px 15px;
     border: none;
     min-width: 120px;
+}
+.last_right.between{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 .setting_modal_main .modal-header{
     border: none;
