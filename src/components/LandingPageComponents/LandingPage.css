@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+@media (max-width:1520px) {
+  .hero2_text_main {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .hero2_text_main h1 {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 120%;
+    text-transform: capitalize;
+    color: #000000;
+  }
+
+  .balance_text2_inner img {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    height: 115px;
+  }
+
+  .balance_text2_inner p {
+    padding: 5px 70px;
+  }
+}
+@media (max-width:1366px){
+  .works_cards_main_div .card-content h3{
+    font-size: 21px;
+    top: 115px;
+  }
+  .balance_text2_inner img {
+    position: absolute;
+    top: -40px;
+    left: -15px;
+    height: 80px;
+  }
+}
+@media(max-width:992px){
+  .balance_text2_inner img {
+    position: absolute;
+    top: -40px;
+    left: -15px;
+    height: 80px;
+  }
+  .header_section .navbar-nav{
+    padding-top: 30px;
+  }
+  .works_cards_main_div .card-collapsed .card-content h3 {
+    font-size: 18px;
+  }
+  .works_section .container{
+    max-width: 100%;
+  }
+  .works_cards_main_div .card-collapsed {
+    width: 100%;
+    max-width: 60px;
+    overflow: hidden;
+    padding: 15px 7px;
+  }
+  .works_cards_main_div .card-number {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+}
+}
+@media(max-width:850px){
+  .works_cards_main_div .card-content p {
+    font-size: 14px;
+  }
+  .works_cards_main_div .card-expanded .card-content h3 {
+    transform: rotate(0);
+    width: 100%;
+    max-width: 220px;
+  }
+}
+@media(max-width:768px) {
+  .works_cards_main_div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 50px;
+  }
+  .balance_text2_main {
+    margin-top: 40px;
+  }
+  .balance_text2_inner p {
+    padding: 50px 20px;
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .balance_text2_inner img {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    height: 80px;
+  }
+  .works_cards_main_div .card{
+    max-width: 160px;
+  }
+  .works_cards_main_div .card.card-expanded{
+    max-width: 100%;
+  }
+  .works_cards_main_div .card.card-collapsed {
+    width: 100%;
+    max-width: 100px;
+  }
+  .works_cards_main_div .card-collapsed .card-content h3 {
+    transform: rotate(270deg);
+    width: 250px;
+    position: relative;
+    top: 120px;
+    right: 90px;
+    text-align: end;
+    font-size: 22px;
+  }
+}
+@media(max-width: 576px) {
+  .hero2_section {
+    width: 100%;
+    height: auto;
+    min-height: 60vh;
+  }
+  .hero2_text_main h1 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 120%;
+    text-transform: capitalize;
+    color: #000000;
+  }
+}
+@media(max-width:450px) {
+  .pds_sec_text_div h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 129%;
+    text-transform: uppercase;
+    color: #000000;
+  }
+  .map_title h1 {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 100%;
+    text-align: center;
+  }
+  .cotact_title h1 {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 100%;
+    text-align: center;
+  }
+  .map_main_div iframe {
+    height: 450px;
+    width: 100%;
+    border-radius: 12px;
+    margin-top: 40px;
+  }
+  .pds_sec_text_div p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: #000000B2;
+    margin-bottom: 0;
+    margin-top: 15px;
+  }
+  .balance_text1_div p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .balance_text1_div h2 {
+    font-size: 24px;
+  }
+}

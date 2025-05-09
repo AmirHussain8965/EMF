@@ -31,10 +31,11 @@
     display: flex;
     align-items: center;
     gap: 20px;
+    justify-content: center;
 }
 .header2_btns button{
     background: transparent;
-    border: 1px solid #0D7ECA;
+    border: 1px solid #0D7ECA !important;
     padding: 10px 20px;
     font-weight: 500;
     font-size: 12px;

@@ -1,21 +1,8 @@
 import React, { useState } from "react";
-import Sidebar from '../components/sidebar/Sidebar';
-import Header from "../components/navbar/Header";
 import SupportComp from "../components/supportcomp/SupportComp";
 
 const Support = () => {
-  const [isOpen, setIsOpen] = useState(true);
-  return (
-    <div className="main">
-      <Sidebar isOpen={isOpen} toggleSidebar={() => setIsOpen(!isOpen)} />
-      <div className="content_main_div">
-        <Header />
-        <div className="content_inner_div">
-          <SupportComp />
-        </div>
-      </div>
-    </div>
-  )
+  return <SupportComp />
 }
 
 export default Support

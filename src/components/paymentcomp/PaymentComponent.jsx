@@ -15,6 +15,35 @@ const PaymentComponent = () => {
     return (
         <div className="payment-container">
             <Row>
+            <Col xs={12} md={6} xl={6}>
+                    <div className="order-summary">
+                        <h5>Order Summary</h5>
+                        <div className="order-item">
+                            <div>
+                                <img src={Temp1} alt="Template" />
+                                <p>Remorts - Car Dealership Website Template</p>
+                            </div>
+                            <span>$800.00</span>
+                        </div>
+                        <div className="payment_addons_text">
+                        <h6>Add-Ons</h6>
+                        <ul>
+                            <li><span>UI/UX Design Enhancements</span> <span>$200.00</span></li>
+                            <li><span>SEO Optimization </span><span>$200.00</span></li>
+                            <li><span>Membership System</span> <span>$200.00</span></li>
+                        </ul>
+                        </div>
+                        <div className="discount">
+                            <input type="text" placeholder="Gift or discount codes" />
+                            <Button variant="primary">Apply</Button>
+                        </div>
+                        <div className="summary-total">
+                            <p><span>Subtotal: </span><span>$1,000.00</span></p>
+                            <p><span>Shipping:</span> <span>$7.24</span></p>
+                            <h5>Total: <span>$1,724.00</span></h5>
+                        </div>
+                    </div>
+                </Col>
                 <Col xs={12} md={6} xl={6}>
                     <div className="payment-methods">
                         <h5>Payment Methods</h5>
@@ -76,7 +105,7 @@ const PaymentComponent = () => {
                                         <Form.Label>Card Number</Form.Label>
                                         <Form.Control type="text" placeholder="1234 5678 9101 1213" />
                                     </Form.Group>
-                                    <Row>
+                                    <Row  className="align-items-end">
                                         <Col>
                                             <Form.Group className="payment_form_inner">
                                                 <Form.Label>Expiration Date</Form.Label>
@@ -93,12 +122,12 @@ const PaymentComponent = () => {
                                     <Form.Group controlId="terms">
                                         <Form.Check type="checkbox" label="I acknowledge and agree to the Terms & Conditions" />
                                     </Form.Group>
-                                    <div className="payment_form_last">
+                                    {/* <div className="payment_form_last">
                                         <div className="steps_input_div">
                                             <label className="payment_last_label">Add Your E-signature</label>
                                             <UploadInput />
                                         </div>
-                                    </div>
+                                    </div> */}
                                 </Form>
                             )}
 
@@ -109,35 +138,7 @@ const PaymentComponent = () => {
 
                     </div>
                 </Col>
-                <Col xs={12} md={6} xl={6}>
-                    <div className="order-summary">
-                        <h5>Order Summary</h5>
-                        <div className="order-item">
-                            <div>
-                                <img src={Temp1} alt="Template" />
-                                <p>Remorts - Car Dealership Website Template</p>
-                            </div>
-                            <span>$800.00</span>
-                        </div>
-                        <div className="payment_addons_text">
-                        <h6>Add-Ons</h6>
-                        <ul>
-                            <li><span>UI/UX Design Enhancements</span> <span>$200.00</span></li>
-                            <li><span>SEO Optimization </span><span>$200.00</span></li>
-                            <li><span>Membership System</span> <span>$200.00</span></li>
-                        </ul>
-                        </div>
-                        <div className="discount">
-                            <input type="text" placeholder="Gift or discount codes" />
-                            <Button variant="primary">Apply</Button>
-                        </div>
-                        <div className="summary-total">
-                            <p><span>Subtotal: </span><span>$1,000.00</span></p>
-                            <p><span>Shipping:</span> <span>$7.24</span></p>
-                            <h5>Total: <span>$1,724.00</span></h5>
-                        </div>
-                    </div>
-                </Col>
+                
             </Row>
         </div>
     );

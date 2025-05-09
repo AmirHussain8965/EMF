@@ -1,8 +1,12 @@
 import React from 'react';
 import './TicketDetail.css';
 import { Button } from 'react-bootstrap';
+import { useLocation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const TicketDetail = () => {
+  const location = useLocation();
+  const navigate = useNavigate(); // ✅ Use hook at top level   
   return (
     <>
       <div className="TicketDetail_main">
@@ -21,7 +25,7 @@ const TicketDetail = () => {
                   <strong>Date & Time:</strong> 10/01/22 - 2:54 PM
                 </p>
               </div>
-              <Button className="back-button">Back</Button>
+              <Button className="back-button" onClick={() => navigate("/SupportAdmin")}>Back</Button>
             </div>
 
             <div className="ticket-user-info">

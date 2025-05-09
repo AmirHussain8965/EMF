@@ -80,6 +80,11 @@ div{
     color: #000;
     padding: 15px 5px 15px 30px;
 }
+
+.accordion ul li a {
+    padding: 15px 5px 15px 30px !important;
+}
+
 .sidebar_accordions_main ul li a:hover{
     color: #fff;
     background: linear-gradient(89.49deg, #0D7ECA 29.65%, #18A0FB 97.53%) !important;

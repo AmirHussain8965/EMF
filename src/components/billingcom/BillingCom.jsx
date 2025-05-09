@@ -17,12 +17,12 @@ const BillingCom = () => {
         { id: 3, type: 'Bank Details', number: '**** 5352', status: 'Make Active' },
     ];
 
-    const [setActiveMethod] = useState(paymentMethods[0].id);
+    const [activeMethod, setActiveMethod] = useState(paymentMethods[0].id);
 
     const handleMakeActive = (id) => {
         setActiveMethod(id);
     };
-
+    
     return (
         <>
             <div className="Billing_main">

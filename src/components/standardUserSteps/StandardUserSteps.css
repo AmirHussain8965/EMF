@@ -1,6 +1,33 @@
 /* *{
     border: 1px dotted #000;
 } */
+
+
+.w-color-colorful {
+    width: auto !important;
+}
+.preview-scale-wrapper {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+  }
+  
+  .preview-scaler {
+    transform-origin: top left;
+    transform: scale(0.6); /* adjust this as needed */
+    width: 166.67%; /* 100% / 0.6 to keep layout visible inside scaled view */
+    height: 60%;
+  }
+  
+  .template_preview > .preview-scale-wrapper {
+    max-width: 100%;
+  }
+
+.settings-items{
+    padding: 20px 30px;
+}
 .sus_title{
     margin-top: 60px;
     margin-bottom: 20px;
@@ -8,25 +35,20 @@
 .sus_title h3{
     font-weight: 600;
     font-size: 20px;
-    line-height: 100%;
     letter-spacing: 0%;
     text-transform: capitalize;
     color: #000000;
     position: relative;
     z-index: 99;
-    margin-left: 30px;
+
 }
 .sus_title h3::before{
     font-weight: 800;
     font-size: 32px;
-    line-height: 121%;
     letter-spacing: 0%;
     text-transform: capitalize;
     color: #D4D4D4;
-    position: absolute;
-    top: -14px;
-    left: -30px;
-    z-index: -1;
+    margin-right: 5px;
 }
 .step3_modal_title_img{
     text-align: center;
@@ -146,6 +168,12 @@
     border-radius: 8px;
     position: relative;
     margin-top: 40px;
+}
+.selected-card {
+    border: 3px solid transparent;
+    border-image: linear-gradient(89.49deg, #0D7ECA 29.65%, #18A0FB 97.53%);
+    border-radius: 8px;
+    border-image-slice: 1;
 }
 .fluent_img{
     position: absolute;
@@ -395,6 +423,17 @@
     transition: background 0.3s ease-in-out;
     border-radius: 8px;
 }
+.common_btn{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background: #007bff;
+    color: white;
+    margin-top: 20px;
+}
+
+
 @media (min-width: 576px) {
     .step3_modal.modal-dialog {
         max-width: 90% !important;
@@ -417,3 +456,237 @@
 
 
 
+
+
+
+/* Step3 */
+.customization-panel {
+    padding: 20px;
+}
+.color_section_inner{
+    margin-top: 10px;
+}
+.color_section_inner h5{
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+
+}
+.color_input_inner{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.color-options{
+    margin-top: 15px;
+}
+.color_input_inner input{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.color-section {
+    margin-bottom: 30px;
+}
+.MuiTooltip-tooltip {
+    font-size: 1rem !important;
+    font-weight: bold !important;
+  }
+
+
+.color-circle {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.color-circle.selected {
+    border: 2px solid #0D7ECA;
+    /* Thicker black border when selected */
+}
+
+.tick-icon {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: -4px;
+    right: -4px;
+}
+
+.color-inputs {
+    width: 100%;
+}
+
+.color-inputs p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    padding: 5px 0px;
+}
+.typography-section {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.typography-option {
+    flex: 1;
+}
+
+.typography-option label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.typography-option select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.additional-elements label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.Cust_inputs_inner {
+    display: flex;
+    gap: 6px;
+    flex-direction: column;
+    position: relative;
+}
+.Cust_inputs_inner input{
+    width: 100%;
+    padding: 8px 25px;
+    border: 1px solid #D4D4D4;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.Cust_inputs_inner img{
+    position: absolute;
+    top: 38px;
+    right: 10px;
+}
+
+
+.template_preview{
+    height: 800px;
+    overflow: auto;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+
+}
+.color_selection_section {
+    height: 800px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 10px 0px;
+    border-top: 1px solid rgb(172, 172, 172);
+    border-bottom: 1px solid rgb(172, 172, 172);
+
+}
+
+.color_picker{
+    margin-bottom: 20px;
+}
+
+.w-color-alpha{
+    /* display: none !important; */
+}
+/* SCRoll bar */
+
+  .main-color-section{
+    margin-bottom: 30px;
+  }
+  /* Optional: Hide scrollbar but allow scrolling */
+  .main-color-section *::-webkit-scrollbar {
+    width: 5px;
+    display: none;
+
+  }
+  
+  .main-color-section *::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+  }
+  
+  .main-color-section *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+
+
+/* SCRoll bar */
+
+
+@media (max-width:576px){
+    .customization-panel{
+        padding: 10px 0px;
+    }
+    .color-inputs{
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    .su_step4_card_inner{
+        flex-direction: column;
+        gap: 10px;
+        align-items: start;
+    }
+    .su_step4_card_inner_radio_btn label {
+        font-weight: 600;
+        font-size: 14px;
+    }
+    .su_step4_card_inner2 {
+        display: flex;
+        align-items: end;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+        margin-top: 10px;
+    }
+    .upload_main_row .ps-5{
+        padding-left: 10px !important;
+    }
+    .upload_main_row .pe-5{
+        padding-right: 10px !important;
+    }
+    .or_txt {
+        position: relative;
+        top: unset;
+        left: unset;
+        transform: unset;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-transform: capitalize;
+        color: #6C757D;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+    .step6_content1_main {
+        padding: 20px 0px;
+    }
+    .payment-icons{
+        flex-wrap: wrap;
+    }
+}
+/* Step3 */

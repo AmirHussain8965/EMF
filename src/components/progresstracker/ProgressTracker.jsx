@@ -1,85 +1,106 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./ProgressTracker.css";
-import Step1 from "../standardUserSteps/Step1";
-import Step2 from "../standardUserSteps/Step2";
-import Step3 from "../standardUserSteps/Step3";
-import Step4 from "../standardUserSteps/Step4";
-import Step5 from "../standardUserSteps/Step5";
-import Step6 from "../standardUserSteps/Step6";
+import Step1 from "../standardUserSteps/Step1.tsx";
+import Step2 from "../standardUserSteps/Step2.jsx";
+import Step3 from "../standardUserSteps/Step3.jsx";
+import { useParams } from "react-router-dom";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
-const steps = [
-    "Provide Business Information",
-    "Set Up Your Domain",
-    "Select Your Template",
-    "Customize Your Website",
-    "Add Inventory",
-    "Complete Payment",
+import { Stepper } from "@progress/kendo-react-layout";
+import "@progress/kendo-theme-default/dist/all.css";
+
+const stepsWithLabel = [
+  {
+    label: "Customize Your Website",
+  },
+  {
+    label: "Add-Ons",
+  },
+  {
+    label: "Complete Payment",
+  },
 ];
 
+const steps = ["Customize Your Website", "Add-Ons", "Complete Payment"];
+
 const ProgressTracker = () => {
-    const [currentStep, setCurrentStep] = useState(1);
+  const { step } = useParams();
+  const [currentStep, setCurrentStep] = useState(1);
+  // Sync current step with Kendo stepper value
+  const handleChange = (e) => {
+    const stepIndex = e.value;
+    setCurrentStep(stepIndex + 1);
+  };
 
-    const nextStep = () => {
-        if (currentStep < steps.length) setCurrentStep(currentStep + 1);
-    };
+  useEffect(() => {
+    if (step) {
+      const stepNumber = parseInt(step.replace("step", ""));
+      if (!isNaN(stepNumber) && stepNumber >= 1 && stepNumber <= steps.length) {
+        setCurrentStep(stepNumber);
+      }
+    }
+  }, [step]);
 
-    const prevStep = () => {
-        if (currentStep > 1) setCurrentStep(currentStep - 1);
-    };
+  const nextStep = () => {
+    if (currentStep < steps.length) setCurrentStep(currentStep + 1);
+  };
 
-    return (
-        <div className="form-container">
-            {/* Progress Bar */}
-            <div className="progress-bar">
-                {steps.map((step, index) => (
-                    <div
-                        key={index}
-                        className={`step-container ${
-                            index === steps.length - 1 ? "last-step" : ""
-                        }`} // Add 'last-step' class to the last step
-                    >
-                        <div
-                            className={`step-circle ${
-                                index + 1 <= currentStep ? "active-step" : "inactive-step"
-                            }`}
-                        >
-                            {index + 1}
-                        </div>
-                        <p className="step-label">{step}</p>
-                    </div>
-                ))}
-                <div className="progress_bg"></div>
-            </div>
+  const prevStep = () => {
+    if (currentStep > 1) setCurrentStep(currentStep - 1);
+  };
 
-            {/* Form Sections */}
-            <div className="form-section">
-                {currentStep === 1 && <p><Step1 /></p>}
-                {currentStep === 2 && <p><Step2 /></p>}
-                {currentStep === 3 && <p><Step3 /></p>}
-                {currentStep === 4 && <p><Step4 /></p>}
-                {currentStep === 5 && <p><Step5 /></p>}
-                {currentStep === 6 && <p><Step6 /></p>}
-            </div>
+  return (
+    <div className="p-4  form-container">
+      {/* Kendo Stepper */}
+      <div className="stepper-container">
+        <button
+          onClick={prevStep}
+          className="nav-arrow left-arrow"
+          disabled={currentStep === 1}
+        >
+          <IoIosArrowBack />
+        </button>
 
-            {/* Navigation Buttons */}
-            <div className="button-group">
-                <button
-                    onClick={nextStep}
-                    className="next-button"
-                    disabled={currentStep === steps.length}
-                >
-                    {currentStep === steps.length ? "Finish" : "Save & Continue"}
-                </button>
-                <button
-                    onClick={prevStep}
-                    className="back-button"
-                    disabled={currentStep === 1}
-                >
-                    Cancel
-                </button>
-            </div>
-        </div>
-    );
+        <Stepper
+          value={currentStep - 1}
+          onChange={handleChange}
+          items={stepsWithLabel}
+        />
+
+        <button
+          onClick={nextStep}
+          className="nav-arrow right-arrow"
+          disabled={currentStep === steps.length}
+        >
+          <IoIosArrowForward />
+        </button>
+      </div>
+
+      {/* Form Sections */}
+      <div className="form-section">
+        {currentStep === 1 && <Step1 />}
+        {currentStep === 2 && <Step2 />}
+        {currentStep === 3 && <Step3 />}
+      </div>
+
+      {/* Navigation Buttons */}
+      <div className="button-group">
+        {currentStep < steps.length && (
+
+          <button onClick={nextStep} className="next-button">
+            Save & Continue
+          </button>
+        )}
+        <button
+          onClick={prevStep}
+          className="back-button"
+          disabled={currentStep === 1}
+        >
+          Back
+        </button>
+      </div>
+    </div>
+  );
 };
 
 export default ProgressTracker;

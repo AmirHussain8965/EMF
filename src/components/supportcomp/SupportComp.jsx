@@ -4,31 +4,32 @@ import MyTable from '../mytable/MyTable';
 import { Button, Col, Row } from 'react-bootstrap'; 
 import Search from "../../components/img/search.svg"; 
 
+
 const SupportComp = () => {
     return (
         <>
             <div className="support_comp_main">
                 <div className="top_title">
-                    <h3>Settings - Change Password</h3>
+                    <h3>Support - Submit A Ticket</h3>
                 </div>
                 <div className="support_comp_inputs_main">
                     <Row>
                         <Col xs={12} md={6} xl={6}>
                             <div className="support_comp_inputs_div">
                                 <label>Name</label>
-                                <input type="password" placeholder="Current Password" />
+                                <input type="text" placeholder="Name" />
                             </div>
                         </Col>
                         <Col xs={12} md={6} xl={6}>
                             <div className="support_comp_inputs_div">
                                 <label>Email</label>
-                                <input type="password" placeholder="New Password" />
+                                <input type="email" placeholder="Your Email" />
                             </div>
                         </Col>
                         <Col xs={12} md={12} xl={12}>
                             <div className="support_comp_inputs_div">
-                                <label>Confirm New Password*</label>
-                                <textarea name="" id="" cols="" rows="3"></textarea>
+                                <label>How May We Help You?</label>
+                                <input type="text" placeholder="Your Message" />
                             </div>
                         </Col>
                     </Row>

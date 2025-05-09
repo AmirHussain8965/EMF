@@ -1,0 +1,24 @@
+.hero2_section{
+    background-image: url(../../img//hero.png);
+    width: 100%;
+    height: auto;
+    min-height: calc(100vh - 65px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 65px;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero2_text_main{
+    width: 100%;
+    max-width: 450px;
+}
+.hero2_text_main h1{
+    font-weight: 700;
+    font-size: 78px;
+    line-height: 129%;
+    text-transform: capitalize;
+    color: #000000;
+}

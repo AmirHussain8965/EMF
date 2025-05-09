@@ -1,0 +1,52 @@
+/* Main container that holds the sidebar and content */
+.main {
+    display: flex;
+    height: 100vh; /* Full viewport height */
+  }
+  
+  /* Main content wrapper (includes header + inner content) */
+  .content_main_div {
+    flex: 1; /* Take remaining width after Sidebar */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  /* Inner content area (below header) */
+  .content_inner_div {
+    flex-grow: 1; /* Ensures it fills available space */
+    height: calc(100vh - 104px); /* Adjust height to account for the header */
+    overflow-y: auto; /* Enables scrolling */
+    padding: 16px; /* Adds some spacing */
+    background-color: #f8f9fa; /* Light background for contrast */
+  }
+  
+  /* Optional: Hide scrollbar but allow scrolling */
+  .content_inner_div::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .content_inner_div::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+  }
+  
+  .content_inner_div::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+
+.pages_main_component {
+    padding: 20px 30px;
+    height: calc(100vh - 104px);
+    overflow-y: auto;
+}
+
+
+  
+@media (max-width:992px) {
+  .content_inner_div {
+    height: calc(100vh - 140px);
+    overflow-y: auto;
+  }
+}

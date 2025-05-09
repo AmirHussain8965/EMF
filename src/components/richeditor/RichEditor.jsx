@@ -2,19 +2,26 @@ import React, { useState } from "react";
 import { Editor } from "@tinymce/tinymce-react";
 import './RichEditor.css';
 
+import { useDispatch, useSelector } from "react-redux";
+import { RootState } from "../../store.tsx";
+import { updateStepData } from "../../features/form/stepsFormSlice.ts";
+
+
 const RichEditor = () => {
-    const [setContent] = useState("");
+    const [content, setContent] = useState(""); 
+    const dispatch = useDispatch();
+    const textEditorData = useSelector((state: RootState) => state.form.step1.textEditorData);
 
-    const handleEditorChange = (newContent) => {
-        setContent(newContent);
-        console.log("Content:", newContent);
-    };
-
+    const handleEditorChange = (content: string) => {
+        setContent(content); // optional local state
+        dispatch(updateStepData({ step: "step1", data: { textEditorData: content } }));
+      };
+      
     return (
         <div className="RichTextEditor">
             <Editor
-                apiKey="u9pjv8o1yxvgsnjv8cwhykz529vn8mn29unwdpsrx3gr33lx" // Optional but recommended
-                initialValue=""
+                apiKey="u9pjv8o1yxvgsnjv8cwhykz529vn8mn29unwdpsrx3gr33lx"
+                initialValue={textEditorData}
                 init={{
                     height: 500,
                     menubar: true,

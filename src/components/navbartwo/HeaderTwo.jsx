@@ -19,8 +19,8 @@ const HeaderTwo = () => {
                         <Navbar.Toggle aria-controls="navbarScroll" />
                         <Navbar.Collapse id="navbarScroll">
                             <Nav className="mx-auto my-2 my-lg-0 gap-4" navbarScroll>
-                                <Nav><Link to="/Website">Inventory</Link></Nav>
-                                <NavDropdown title="Financing" id="navbarScrollingDropdown">
+                                {/* <Nav><Link href="#action0">Home</Link></Nav> */}
+                                {/* <NavDropdown title="Financing" id="navbarScrollingDropdown">
                                     <NavDropdown.Item href="#action3">Financing</NavDropdown.Item>
                                     <NavDropdown.Item href="#action4">
                                         Another
@@ -28,12 +28,14 @@ const HeaderTwo = () => {
                                     <NavDropdown.Item href="#action5">
                                         Something
                                     </NavDropdown.Item>
-                                </NavDropdown>
-                                <Nav.Link href="#action2">Contact us</Nav.Link>
+                                </NavDropdown> */}
+                                <Nav.Link href="#action0">HOME</Nav.Link>
+                                <Nav.Link href="#action1">DEALER WEBSITES</Nav.Link>
+                                <Nav.Link href="#action2">WEBINAR PORTAL</Nav.Link>
                             </Nav>
                             <Form className="header2_btns">
-                                <Button type='button'>Talk to us</Button>
-                                <Button type='button' className='h2_btn_active'>Get Directions</Button>
+                                <Button type='button'>CONTACT US</Button>
+                                <Button type='button' className='h2_btn_active'>SUPPORT</Button>
                             </Form>
                         </Navbar.Collapse>
                     </Container>

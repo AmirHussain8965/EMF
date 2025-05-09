@@ -24,6 +24,7 @@ const MyTable = () => {
         <div>
             {/* Table */}
             <div className="mytable_main">
+                
                 <Table bordered>
                     <thead>
                         <tr>

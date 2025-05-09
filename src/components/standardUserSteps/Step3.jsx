@@ -1,128 +1,71 @@
 import React, { useState } from "react";
 import './StandardUserSteps.css';
-import { Row, Col, Modal } from 'react-bootstrap';
-import step3_1 from "../../components/img/step3_1.svg";
-import step3_2 from "../../components/img/step3_2.svg";
-import step3_3 from "../../components/img/step3_3.svg";
-import step3_4 from "../../components/img/step3_4.svg";
-import step3_5 from "../../components/img/step3_5.svg";
-import step3_6 from "../../components/img/step3_6.svg";
-import Fluent from "../../components/img/Fluent.svg";
-import Modal1 from "../../components/img/modal1.png";
-import Modal2 from "../../components/img/modal2.png";
-
+import { Button } from 'react-bootstrap';
+import PaymentComponent from "../paymentcomp/PaymentComponent";
 
 const Step3 = () => {
-    const [show, setShow] = useState(false);
+    const [paymentCompleted, setPaymentCompleted] = useState(false);
 
     return (
         <div>
             <section className='StandardUserSteps_section'>
                 <div className="sus_title">
-                    <h3 className='step3_txt'>Select Your Template</h3>
+                    <h3 className='step3_txt'>Complete Payment</h3>
                 </div>
-                <div className="StandardUserSteps_inputs_main">
-                    <Row>
-                        <Col xs={12} md={6} xl={4}>
-                            <div className="SU_step3_cards_body_div">
-                                <div className="SU_step3_card_img">
-                                    <img src={step3_1} alt="..." />
-                                </div>
-                                <img src={Fluent} className="fluent_img" alt="" onClick={() => setShow(true)} />
-                                <div className="SU_step3_card_txt">
-                                    <h6>Remons - Car Dealership Website template</h6>
 
-                                    <h5>$600.00</h5>
-                                </div>
-                            </div>
-                        </Col>
-                        <Col xs={12} md={6} xl={4}>
-                            <div className="SU_step3_cards_body_div">
-                                <div className="SU_step3_card_img">
-                                    <img src={step3_2} alt="..." />
-                                </div>
-                                <img src={Fluent} className="fluent_img" alt="" />
-                                <div className="SU_step3_card_txt">
-                                    <h6>Remons - Car Dealership Website template</h6>
-                                    <h5>$600.00</h5>
-                                </div>
-                            </div>
-                        </Col>
-                        <Col xs={12} md={6} xl={4}>
-                            <div className="SU_step3_cards_body_div">
-                                <div className="SU_step3_card_img">
-                                    <img src={step3_3} alt="..." />
-                                </div>
-                                <img src={Fluent} className="fluent_img" alt="" />
-                                <div className="SU_step3_card_txt">
-                                    <h6>Remons - Car Dealership Website template</h6>
-                                    <h5>$600.00</h5>
-                                </div>
-                            </div>
-                        </Col>
-                        <Col xs={12} md={6} xl={4}>
-                            <div className="SU_step3_cards_body_div">
-                                <div className="SU_step3_card_img">
-                                    <img src={step3_4} alt="..." />
-                                </div>
-                                <img src={Fluent} className="fluent_img" alt="" />
-                                <div className="SU_step3_card_txt">
-                                    <h6>Remons - Car Dealership Website template</h6>
-                                    <h5>$600.00</h5>
-                                </div>
-                            </div>
-                        </Col>
-                        <Col xs={12} md={6} xl={4}>
-                            <div className="SU_step3_cards_body_div">
-                                <div className="SU_step3_card_img">
-                                    <img src={step3_5} alt="..." />
-                                </div>
-                                <img src={Fluent} className="fluent_img" alt="" />
-                                <div className="SU_step3_card_txt">
-                                    <h6>Remons - Car Dealership Website template</h6>
-                                    <h5>$600.00</h5>
-                                </div>
-                            </div>
-                        </Col>
-                        <Col xs={12} md={6} xl={4}>
-                            <div className="SU_step3_cards_body_div">
-                                <div className="SU_step3_card_img">
-                                    <img src={step3_6} alt="..." />
-                                </div>
-                                <img src={Fluent} className="fluent_img" alt="" />
-                                <div className="SU_step3_card_txt">
-                                    <h6>Remons - Car Dealership Website template</h6>
-                                    <h5>$600.00</h5>
-                                </div>
-                            </div>
-                        </Col>
-                    </Row>
-                </div>
-            </section>
-            <Modal
-                show={show}
-                onHide={() => setShow(false)}
-                aria-labelledby="example-custom-modal-styling-title"
-                dialogClassName="step3_modal">
-                <Modal.Header closeButton>
-                </Modal.Header>
-                <Modal.Body>
-                   <div className="step3_modal_content_main_div">
-                        <div className="step3_modal_title_main">
-                            <div className="step3_modal_title_txt">
-                                <h5>Remons - Car Dealership Website template</h5>
-                                <p>Remons – A sleek and modern car dealership website template designed for showcasing vehicle listings, attracting buyers, and streamlining the sales process effortlessly.</p>
+                {/* Pricing Section (Hidden After Payment) */}
+                {!paymentCompleted && (
+                    <div className="step6_content1_main">
+                        <div className="step6_content1_inner">
+                            <div className="step6_content1_inner_title">
+                                <h5>1. Base Price of the Template</h5>
+                                <p>$300.00</p>
                             </div>
                         </div>
-                           <div className="step3_modal_title_img">
-                               <img src={Modal1} alt="Modal1" />
-                               <img src={Modal2} alt="Modal1" />
-                           </div>
-                   </div>
-                </Modal.Body>
-            </Modal>
-        </div>
-    )
-}
+                        <div className="step6_content1_inner">
+                            <div className="step6_content1_inner_title">
+                                <h5>2. Customizations Total</h5>
+                                <p>$600.00</p>
+                            </div>
+                            <ul>
+                                <li><span>UI/UX Design Enhancements:</span> <span>$200.00</span></li>
+                                <li><span>SEO Optimization:</span> <span>$200.00</span></li>
+                                <li><span>Membership System:</span> <span>$200.00</span></li>
+                            </ul>
+                        </div>
+                        <div className="step6_content1_inner">
+                            <div className="step6_content1_inner_title">
+                                <h5>3. Inventory Fee</h5>
+                                <p>$30.00</p>
+                            </div>
+                        </div>
+                        <div className="step6_content1_inner">
+                            <div className="step6_content1_inner_title">
+                                <h5>4. Tax</h5>
+                                <p>$70.00</p>
+                            </div>
+                        </div>
+                        <div className="step6_content1_totals">
+                            <h5>TOTAL</h5>
+                            <h5>$1,000.00</h5>
+                        </div>
+                    </div>
+                )}
 
-export default Step3
+                {/* Payment Method Section (Shown After Clicking Button) */}
+                {paymentCompleted && (
+                     <PaymentComponent />
+                )}
+
+                {/* Complete Payment Button (Hidden After Clicking) */}
+                {!paymentCompleted && (
+                    <div className="complete_payment_btn">
+                        <Button onClick={() => setPaymentCompleted(true)}>Let's GO</Button>
+                    </div>
+                )}
+            </section>
+        </div>
+    );
+};
+
+export default Step3;

@@ -1,20 +1,25 @@
-import React from 'react';
-import HeaderTwo from '../components/navbartwo/HeaderTwo';
-import Hero from '../components/hero/Hero';
-import DealerShip from '../components/dealership/DealerShip';
-import OurTeam from '../components/ourteam/OurTeam';
-import Footer from '../components/footer/Footer';
+import React from 'react'
+import Hero from '../components/LandingPageComponents/hero/Hero';
+import Header from '../components/LandingPageComponents/header/Header';
+import Balance from '../components/LandingPageComponents/balance/Balance';
+import PDS from '../components/LandingPageComponents/pds/PDS';
+import Contact from '../components/LandingPageComponents/contact/Contact';
+import Map from '../components/LandingPageComponents/map/Map';
+import Works from '../components/LandingPageComponents/works/Works';
+import "../components/LandingPageComponents/LandingPage.css"
 
 const LandingPage = () => {
-  return (
-    <>
-        <HeaderTwo />
-        <Hero />
-        <DealerShip />
-        <OurTeam />
-        <Footer />
-    </>
-  )
+    return (
+        <>
+            <Header />
+            <Hero />
+            <Balance />
+            <PDS />
+            <Works/>
+            <Contact />
+            <Map />
+        </>
+    )
 }
 
-export default LandingPage
+export default LandingPage;
